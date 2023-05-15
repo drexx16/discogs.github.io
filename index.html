@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página con imágenes y video</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Estilos CSS */
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url('fondo 7.jpg');
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		section {
+			padding: 50px;
+			text-align: center;
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 20px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		.container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			margin: 50px auto;
+			max-width: 1000px;
+		}
+		.image {
+			max-width: 45%;
+			margin: 20px;
+			
+	
+		}
+		.image-left {
+			float: left;
+			margin-right: 0px;
+			margin-left: -400px;
+			margin-top: -30px;
+			max-width: 1100px;
+		}
+		.image-right {
+			float: right;
+			margin-left: -100px;
+			margin-right: -100px;
+			margin-top: -450px;
+			max-width: 500px;
+			display: inline-block;
+		}
+
+		.content {
+   			display: flex;
+    		flex-direction: column;
+   			align-items: flex-end;
+			margin-top: 20px;
+		}
+
+		.text {
+			text-align: justify;
+			font-size: 20px;
+			line-height: 1.5;
+			margin-top: -800px;
+			clear: both;
+			color: rgb(255, 255, 255);
+			text-align: justify;
+   			padding-left: 595px;
+   			padding-right: -700px;
+			font-family: Arial, Helvetica, sans-serif, sans-serif;
+  
+		}
+
+		.third-image {
+			display: block;
+			margin: 0 auto;
+			max-width: 400px;
+			height: auto;
+			margin-top: -350px;
+			margin-right: 0px;
+			margin-left: 370px;
+		}
+
+		video {
+			max-width: 100%;
+			margin-top: 50px;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<img src="ANAGRAMAWHITE.png" alt="Logo de la empresa" style="width: 40px;">
+	</header>
+
+	<section>
+		<div class="container">
+			<img src="ipad.png" alt="Imagen 1"class="image image-left">
+			<img src="REDISEÑOWHITE.png" alt="Imagen 2" class="image image-right">
+			<p class="text">Esta app está destinada a los amantes y nostálgicos de la música de todos los tiempos y géneros; a los coleccionistas más exquisitos del mundo; y a cualquier oyente con curiosidad sobre más información de sus artistas y canciones favoritas.</p>
+			<img src="appss.png" alt="Tercera imagen" class="third-image" style="max-width: 200px">
+		</div>
+	</section>
+	<section>
+        
+		
+		<video controls>
+			<source src="ruta/a/video.mp4" type="video/mp4">
+			<source src="ruta/a/video.webm" type="video/webm">
+			Tu navegador no soporta la reproducción de videos.
+		</video>
+	</section>
